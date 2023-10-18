@@ -1,0 +1,52 @@
+name: Pin README to Top
+
+on:
+  push:
+    branches:
+      - main  # Change this to your repository's default branch if it's not 'main'
+
+jobs:
+  pin-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Pin README to Top
+        run: |
+          echo "# My Awesome Project" > README.md
+          echo >> README.md
+          echo "Welcome to my repository! This README provides an overview of the project." >> README.md
+          echo >> README.md
+          echo "## Table of Contents" >> README.md
+          echo >> README.md
+          echo "- [Introduction](#introduction)" >> README.md
+          echo "- [Features](#features)" >> README.md
+          echo "- [Usage](#usage)" >> README.md
+          echo "- [Contributing](#contributing)" >> README.md
+          echo "- [License](#license)" >> README.md
+          echo >> README.md
+          echo "## Introduction" >> README.md
+          echo >> README.md
+          echo "This project aims to..." >> README.md
+          echo >> README.md
+          echo "## Features" >> README.md
+          echo >> README.md
+          echo "- Feature 1: ..." >> README.md
+          echo "- Feature 2: ..." >> README.md
+          echo >> README.md
+          echo "## Usage" >> README.md
+          echo >> README.md
+          echo "To use this project..." >> README.md
+          echo >> README.md
+          echo "## Contributing" >> README.md
+          echo >> README.md
+          echo "Contributions are welcome!..." >> README.md
+          echo >> README.md
+          echo "## License" >> README.md
+          echo >> README.md
+          echo "This project is licensed under the XYZ License - see the [LICENSE](LICENSE) file for details." >> README.md
+          git add README.md
+          git commit -m "Pin README to the top" --author "Your Name <your-email@example.com>"
+          git push
