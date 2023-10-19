@@ -9,7 +9,6 @@
 * [Codeforces Blog](https://codeforces.com/blog/entry/101083)
 
 ## **Problems** 
-[C. Dora and Search](https://codeforces.com/problemset/problem/1793/C) (Easy)
 
 [B. Maximum of Maximums of Minimums](https://codeforces.com/problemset/problem/872/B) (Easy)
 
