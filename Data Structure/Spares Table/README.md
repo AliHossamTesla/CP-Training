@@ -18,8 +18,6 @@
 
 [D. Yet Another Monster Killing Problem](https://codeforces.com/problemset/problem/1257/D) (Madiem)
 
-[E. Correct Placement](https://codeforces.com/problemset/problem/1472/E) (Madiem)
-
 [D. Program](https://codeforces.com/problemset/problem/1473/D) (Madiem)
 
 [D. Rorororobot](https://codeforces.com/problemset/problem/1709/D) (Madiem)
