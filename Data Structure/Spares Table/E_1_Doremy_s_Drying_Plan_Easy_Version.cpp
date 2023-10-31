@@ -1,0 +1,21 @@
+/*
+ *أَمْ حَسِبْتُمْ أَن تَدْخُلُوا الْجَنَّةَ وَلَمَّا يَأْتِكُم مَّثَلُ الَّذِينَ خَلَوْا مِن قَبْلِكُم ۖ مَّسَّتْهُمُ الْبَأْسَاءُ وَالضَّرَّاءُ وَزُلْزِلُوا حَتَّىٰ يَقُولَ الرَّسُولُ وَالَّذِينَ آمَنُوا مَعَهُ مَتَىٰ نَصْرُ اللَّهِ ۗ أَلَا إِنَّ نَصْرَ اللَّهِ قَرِيبٌ (214)
+ *by : @Tesla .
+ */
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+#define pb push_back
+#define rall(n) n.rbegin(), n.rend()
+#define all(n) n.begin(), n.end()
+const int MOD = 1e9 + 7;
+
+int32_t main(){
+	ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+	int T;
+	cin >> T;
+	while (T--){
+		
+	}
+	return 0;
+}
