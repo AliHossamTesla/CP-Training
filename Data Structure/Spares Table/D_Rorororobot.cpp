@@ -36,33 +36,24 @@ public:
 };
 int32_t main(){
 	ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-	int T;
-	cin >> T;
-	while (T--){
-		int N , M ; cin >> N >> M ;
-		string s; cin >> s ;
-		s = "#" + s ;
-		vector<int>pref(N + 2,0) ;
-		for(int i = 1 ; i <= N ; i ++){
-			if(s[i] == '+') pref[i] = 1 ;
-			else pref[i] = -1 ;
-			pref[i] += pref[i - 1] ;
+	int N , M ; cin >> N >> M ;
+	vector<int>A(M,0) ;
+	for(int i = 0 ; i < M ; i ++) cin >> A[i] ;
+	SparseTable<int> RMQ(A,[&](int i,int j){return max(i,j) ;});
+	int Q ; cin >> Q ;
+	while(Q--){
+		int X_1 , X_2 ,Y_1 , Y_2 , K ; cin >> X_1 >> Y_1 >> X_2 >> Y_2 >> K ;
+		Y_1 -- ; Y_2 -- ;
+		if(abs(X_1 - X_2) % K != 0 or abs(Y_1 - Y_2) % K != 0){
+			cout << "NO\n" ;
+			continue ;
 		}
-		SparseTable<int>MX(pref,[&](int i,int j){return max(i,j) ;}) ;
-		SparseTable<int>MN(pref,[&](int i,int j){return min(i,j) ;}) ;
-		vector<int>mn(N + 2,0),mx(N + 2,0) ;
-		for(int i = N ; i >= 1 ; i --){
-			mn[i] = min(0LL,mn[i + 1]) ;
-			mx[i] = max(0LL,mx[i + 1]) ;
-			if(s[i] == '+') mn[i] ++ , mx[i] ++ ;
-			else mn[i] -- , mx[i] -- ;
+		if(Y_1 > Y_2){
+			swap(X_1,X_2) ;
+			swap(Y_1,Y_2) ;
 		}
-		while(M --){
-			int L , R ; cin >> L >> R ;
-			int l = min(MN.Query(0,L - 1),pref[L - 1] + mn[R + 1]) ;
-			int r = max(MX.Query(0,L - 1),pref[L - 1] + mx[R + 1]);
-			cout << r - l + 1 << endl ;
-		}
+		int lim = X_1 + (N - X_1)/K * K ;
+		cout << (RMQ.Query(Y_1,Y_2) < lim ? "YES\n" : "NO\n") ;
 	}
 	return 0 ;
 }
