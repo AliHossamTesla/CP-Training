@@ -7,6 +7,7 @@
 - [CPH-Book](https://usaco.guide/CPH.pdf#page=133).
 - [CP2-Book](https://usaco.guide/CP2.pdf#page=112).
 - [USACO](https://usaco.guide/gold/shortest-paths).
+- [MIT linear programming](https://www.cs.rit.edu/~spr/COURSES/ALG/MIT/lec18.pdf).
 
 ## **Problems** 
 
@@ -31,3 +32,12 @@
 - [C. Roads in Berland](https://codeforces.com/contest/25/problem/C)
 - [G. It is all about wisdom](https://codeforces.com/gym/100814/problem/G)
 - [D. Volleyball](https://codeforces.com/contest/96/problem/D)
+- [UCV2013B](http://www.spoj.com/problems/UCV2013B/)
+- [JHNSN](http://www.spoj.com/problems/JHNSN/)
+- [1453](https://www.e-olymp.com/en/problems/1453)
+- [364](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=364)
+- [475](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=7&page=show_problem&problem=475)
+- [1040](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=12&page=show_problem&problem=1040)
+- [456](http://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=456)
+- [3964](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3964)
+- [1673](https://cses.fi/problemset/task/1673)
