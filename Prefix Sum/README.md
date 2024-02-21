@@ -73,9 +73,7 @@ We can create a new array where every element have vaule of the index in $arr$ a
 1. Let call array name is $pref$ and set this size to be $n + 1$ .
 2. Set the first element to be zero, $pref[0] = 0$.
 3. So $pref[1] = pref[0] + arr[1]$ and the second element is $pref[2] = pref[1] + arr[2]$, **you note?** every element in $pref$ will equal to the previous element in $pref$ and $arr$ in this formula , where $(1 \leq l \leq r \leq n)$:
-$$
-pref[i] = pref[i - 1] + arr[i] 
-$$
+$$pref[i] = pref[i - 1] + arr[i]$$
 ![alt text](image-3.png)
 
 The finael result of oue example :
