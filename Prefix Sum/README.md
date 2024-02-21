@@ -65,6 +65,7 @@ want to compute the sum of values from $l$ to $r$, where $(1 \leq l \leq r \leq 
 $$Sum = \texttt{arr}[l]+\texttt{arr}[l+1]+\cdots+\texttt{arr}[r]$$
 
 let that $n = 6$ and array as following :
+
 ![alt text](image.png)
 
 ## Resources : 
