@@ -74,7 +74,8 @@ We can create a new array where every element have vaule of the index in $arr$ a
 2. Set the first element to be zero, $pref[0] = 0$.
 3. So $pref[1] = pref[0] + arr[1]$ and the second element is $pref[2] = pref[1] + arr[2]$, **you note?** every element in $pref$ will equal to the previous element in $pref$ and $arr$ in this formula , where $(1 \leq l \leq r \leq n)$:
 $$pref[i] = pref[i - 1] + arr[i]$$
-![alt text](image-3.png)
+
+![](image-3.png)
 
 The finael result of oue example :
 
@@ -85,13 +86,9 @@ The finael result of oue example :
 Now How can we answer queries of questions we say in motivation ?
 
 We can say that :
-$$
-    sum(l,r) = sum(0,r) - sum(0,l - 1)
-$$
+$$sum(l,r) = sum(0,r) - sum(0,l - 1)$$
 Which same as :
-$$
-    pref[r] = pref[r] - pref[l - 1] 
-$$
+$$pref[r] = pref[r] - pref[l - 1] $$
 You should know now why we set size of $pref$ to be $n + 1$ as if he wanted the sum from $l = 1$ to $r$ the $arr[l - 1]$ will be runtime error !
 
 from previous example the sum from $l = 3$ to $r = 5$ will be $pref[5] = pref[5] - pref[2] = 18 - 7 = 11$ which equal to $arr[3] + arr[4] + arr[5] = 4 + 2 + 5 = 11$
