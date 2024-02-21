@@ -52,7 +52,7 @@ int main(){
     }
 }
 ```
-So we will find time complexity is $O(qn)$, The problem is that if $n = 10^5$ and $q = 10^5$ it will take $4*10^{10}$ !!!!!!!!!!!!!!!!
+So we will find time complexity is $O(qn)$, The problem is that if $n = 10^5$ and $q = 10^5$ it will take $10^{10}$ !!!!!!!!!!!!!!!!
 
 So go on to see how to solve this problem.
 ## Range Query
