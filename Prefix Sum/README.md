@@ -124,7 +124,12 @@ We can now answer any question in $O(1)$ so the time complexity of code is $O(ma
 1. ***Segements***
         
         if I have number line and some segments in form [l : r] and need to know the point who have more than segments pass throw it .
-
+2. ***min and max subarray***
+        
+        if you have array what the maximum subarray sum ?
+3. ***min element and max element in subarray***
+        
+        if you have array of size 10, what the maximum element in the first 5 elements ?
 
 ## **2D Prefix Sum** :
 It is also possible to generalize this idea to higher dimensions. For example,
