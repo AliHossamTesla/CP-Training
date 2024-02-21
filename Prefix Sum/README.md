@@ -77,7 +77,7 @@ $$pref[i] = pref[i - 1] + arr[i]$$
 
 ![](image-3.png)
 
-The final result of oue example :
+The final result of our example :
 
 ![alt text](image-1.png)
 
